@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.carts{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    
+      .c-cart{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      gap: 0.3cm;
+      color:white;
+        transform: translateX(5cm);      
+        .cart{
+        display: flex;
+        flex-direction: column;
+        width: 6cm;
+        height: 5cm;
+        margin-top: 1cm;
+        font-family: Montserrat, sans-serif;
+        text-transform: uppercase;
+        position: relative;
+       align-items: center;
+        .c-img{
+            position: relative;
+        }
+        .c-titre{
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            transform: translateY(0.7cm);
+          }
+      }
+    }
+}

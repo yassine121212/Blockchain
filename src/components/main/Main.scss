@@ -4,7 +4,7 @@
 .main{
     display:flex;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 84vh;
     background-color: black;
     color: white;
     .m-left{
@@ -52,6 +52,7 @@
                 font-size: 20px;
                 font-family: Montserrat, sans-serif;
                 color: black;
+                text-align: center;
                  cursor: pointer;
                  &:hover{
                     box-shadow: 1px 1px 12px #EEBA38;
@@ -78,7 +79,7 @@
                 }
                 .textbut{
                     position: absolute;
-                    transform: translate(-1.2cm,0.3cm);
+                     transform: translate(2cm,0.2cm);
                   }
                 
             }
