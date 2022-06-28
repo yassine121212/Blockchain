@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.roadmap{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-size: larger;
+    .r-elements{
+        display: flex;
+        flex-direction: column;
+        .class-r{
+             margin-bottom:50px ;
+             display: flex;
+             flex-direction: column;
+             .r-circle{
+                height: 20px;
+                width: 20px;
+                border:3px solid white;
+                border-radius: 50%;
+                display: inline-block;
+                transform: translate(-4cm,0.8cm);
+                position: relative;
+                .mdone-r{
+                    position: absolute;
+                    font-size: 1.2cm;
+                    font-weight: 1cm;
+                    color: green;
+                    left: -3px;
+                    top: -15px;
+
+                }
+            }
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .r-road{
+        margin-top: 1cm;
+        font-size: 1cm;
+    }
+}
+@media only screen and (max-width: 768px) {
+   .r-circle{
+    transform: translate(-1cm,0.7cm) !important;
+     }
+
+
+
+}

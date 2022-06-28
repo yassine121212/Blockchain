@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Main from '../../components/main/Main'
-import Cart from '../../components/Carts/Cart'
+import Desc from "../../components/Desc/Desc";
+import Road from "../../components/Road/Roadmap";
 
 const Home = () => {
   return (
     <div>
         <Navbar/>
         <Main/>
-        <Cart/> 
+        <Desc/>
+        <Road/>
     </div>
   )
 }

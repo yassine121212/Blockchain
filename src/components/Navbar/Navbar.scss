@@ -1,13 +1,15 @@
 .n-navbar{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
-    color: white;
-    height: 80px;
+    background-color: #FFD93C;
+    color: black;
+    height: 60px;
     text-align: center;
     .n-logo img{
         object-fit: cover;
-        transform: translateY(0.3cm);
+        transform: translateY(0.05cm);
+        width:4cm ;
+        height: 1.5cm;
 
     }
     .n-links{
@@ -31,16 +33,102 @@
                 height: 3.5px;
                 bottom: 0;
                 left: 0;
-                background-color: rgb(255, 187, 0);
+                background-color: black;
                 visibility: hidden;
                 transition: all 0.3s ease-in-out;
               }
                 &:hover:before{
                         visibility: visible;
                         width: 100%;            }
+                        sup{
+                            position:absolute;
+                            color:black ;
+                            top:0; 
+                            font-size: small;
+                                            
+                        }
         }
              
 
         }
     }
+    .hamburger {
+        display: none;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+}
+.n-close{
+visibility: hidden;}
+
+@media only screen and (max-width: 768px) {
+  .n-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: relative;
+     .n-links ul{
+        color: #FFD93C;
+         display: flex;
+         transform: translate(-0.8cm,1cm);
+         flex-direction: column;
+         justify-content: center;
+         height: 100vh;
+         width: 100vh;
+         margin-top: -1cm;
+         margin-left:0.8cm ;
+         background-color: black;
+         
+         
+         li{
+            padding-bottom: 6px;
+            cursor: pointer;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 3.5px;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+              }
+             &:hover{
+                 color: white;
+                 background-color: black !important;
+                 }
+            sup{
+                color:white ;
+            }
+        }
+    }
+    .hamburger {
+        position: absolute;
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+        right: 0;
+    }
+    .n-close{
+        position: absolute;
+        display: block;
+        visibility: visible;
+        padding: 1rem;
+        cursor: pointer;
+        right: 0;
+        font-size:1cm;
+        font-weight:600;
+    }
+
+}
 }
