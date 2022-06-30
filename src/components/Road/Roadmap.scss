@@ -9,6 +9,7 @@
     align-items: center;
     font-family: Montserrat, sans-serif;
     font-size: larger;
+    margin-top: 3cm;
     .r-elements{
         display: flex;
         flex-direction: column;
@@ -40,9 +41,12 @@
         }
     }
     .r-road{
-        margin-top: 1cm;
+        margin-bottom: 1cm;
         font-size: 1cm;
+        color: #FFD93C;
     }
+
+
 }
 @media only screen and (max-width: 768px) {
    .r-circle{

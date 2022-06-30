@@ -5,12 +5,17 @@
 .descri{
     color: #657165;
      margin: 1cm 0cm;
-     width: 100%; 
+      width: 100%; 
        .descripti{
         width: 55%; 
         font-family: Montserrat, sans-serif;
         display: inline-block;
 
     }
+}
+@media only screen and (max-width: 768px) {
+    .descri{
+        margin-top: 12cm !important;
+       }
 }
  
