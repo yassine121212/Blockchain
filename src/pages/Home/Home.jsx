@@ -5,7 +5,7 @@ import Desc from "../../components/Desc/Desc";
 import Road from "../../components/Road/Roadmap";
 import Partner from '../../components/Partner/Partner';
 import Footer from "../../components/Footer/Footer";
-
+import "./Home.css"
 const Home = () => {
   return (
     <div>
