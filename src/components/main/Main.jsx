@@ -1,6 +1,7 @@
 import React from "react";
 import logon from "../../img/logon.png";
- 
+import {Link} from 'react-router-dom';
+
 import "./Main.scss";
 const Main = () => {
   return (
@@ -16,7 +17,7 @@ const Main = () => {
         </div>
         
         <div className="buttons">
-          <div className="butt1"><span className="textbut">IDO</span></div>
+        <Link className='link' to="/Ido"> <div className="butt1"><span className="textbut">IDO</span></div></Link>
           <div className="butt2"><span className="textbut">Airdrop</span></div>
         </div>
       </div>

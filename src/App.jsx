@@ -3,12 +3,19 @@ import { useState } from 'react'
  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home/Home'
+ import Ido from './pages/Ido/Ido';
 
 function App() {
  
   return (
     <div className="App">
-       <Home/>
+     <Router>
+        <Routes>
+       <Route path='/'  exact element={<Home/>} />
+       <Route path='/Ido'  exact element={<Ido/>} />
+
+      </Routes>
+    </Router>
     </div>
   )
 }

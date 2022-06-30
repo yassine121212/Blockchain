@@ -1,0 +1,120 @@
+.exchange{
+    background-color: black;
+    text-align: center;
+     font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+     .element{
+            background-color: white !important;
+            width: 80%;
+            height: 100%;
+             display: flex;
+             flex-direction: column;
+            margin-top: 1.5cm;
+            border-radius: 10px;
+         .tags-up{
+             min-height: 1cm;
+             padding: 0.5cm;
+             .tag-up{
+              display:flex ;
+              align-items: center;
+                img{
+                  min-width: 0.35cm;
+                  min-height: 0.35cm;
+                  padding: 5px;
+                  object-fit: cover;
+                 }
+                .curr-bnb{
+                  font-weight: 600;
+                }
+             }
+
+         }
+         .tags-bottom{
+          display: flex;
+          flex-direction: column;
+            .tag-curr{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 0 1cm;
+              font-size: 15px;
+              font-weight: 600;
+              height:  45px;
+             }
+             .tag-balance{
+              display: flex;
+              justify-content: space-around;
+              padding: 0.5cm;
+              
+              .bal-lab{
+                border: 1px solid #F1F1F1;
+                width: 100%;
+                position: relative;
+                .name-curr{
+                  float: left;
+                  transform: translate(1cm,0.3cm);
+                }
+                .Max{
+                  border: 2.5px solid #259490;
+                  color: #259490;
+                  border-radius: 5px;
+                  position: absolute;
+                  height: 20px;
+                  right: 11px;
+                  top:8px ;
+                  font-size: 15px;
+                  font-weight: 600;
+                  width: 46px;
+                  cursor: pointer;
+                  
+                  
+                }
+                input{
+                  float: left;
+                  width: 99%;
+                  height: 45px;
+                  border:none;
+                  &:focus{
+                    outline: none;
+                }
+                }
+              }
+             }
+             .tag-convert{
+                 width: 100%;
+                position: relative;
+                  .txt-convert{
+                    position: absolute;
+                     padding-left: 1cm;
+                    font-size: 13px;
+                    font-weight: 800;
+                    color: #78888D;
+                }
+              .tag-button{  
+                 .btn-ido{
+                  background-color: #F3BA3A;
+                  color: white;
+                  font-size: 12px;
+                 }
+              }
+         }
+         .tag-button{  
+          .btn-ido{
+           background-color: #F3BA3A;
+           color: white;
+           margin-top: 1cm;
+           font-size: 17px;
+           border: none;
+           height: 45px;
+           width: 200px;
+           border-radius: 5px;
+           margin-bottom: 1.4cm;
+           cursor: pointer;
+
+          }
+       }
+        }
+  
+        }
+}

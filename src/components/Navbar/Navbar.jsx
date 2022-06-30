@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import logo from "../../img/LOGO.jpeg"
+import {Link} from 'react-router-dom';
 import {MdClose} from "react-icons/md"
 import "./Navbar.scss"
 const Navbar = () => {
@@ -12,7 +13,11 @@ const Navbar = () => {
   return (
     <div className="n-navbar">
         <div className="n-logo">
+        <Link className='link' to="/">
+
           <img src={logo} alt="logo"/>
+          </Link>
+
         </div>
         {
           !active && (
@@ -21,7 +26,9 @@ const Navbar = () => {
                 <li>WHITEPAPER</li>
                 <li>ROADMAP</li>
                 <li>AIRDROP</li>
+                <Link className='link' to="/Ido">
                 <li>IDO</li>
+                </Link>
                 <li>GAMEFI<sup>soon</sup></li>
              </ul>
         </div>)
