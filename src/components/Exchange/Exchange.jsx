@@ -31,7 +31,7 @@ const Exchange = () => {
             </div>
            <div className="tag-balance">
                <div className="bal-lab">
-                <span className='name-curr'>FLAG</span>
+                <span className='name-curr'>FXF</span>
                </div>
                <div className="bal-lab">
                 <input className="bal-input" type="text" value={0} ></input>
@@ -40,7 +40,7 @@ const Exchange = () => {
             </div>
             <div className="tag-convert">
               <div className="txt-convert">
-               <span className='txttoconvert'>1 BNB ~ 1385.6181 FLAG</span>
+               <span className='txttoconvert'>1 bnb = 1 000 000 FXF</span>
               </div>
             </div>
             <div className="tag-button">
